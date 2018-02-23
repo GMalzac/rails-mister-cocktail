@@ -1,3 +1,25 @@
 // Import your components CSS files here.
 @import "alert";
 @import "navbar";
+@import "card";
+
+body {
+  background-color: #FFE27A;
+  color: #007672;
+}
+
+
+h1 {
+  margin-bottom: 40px;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
