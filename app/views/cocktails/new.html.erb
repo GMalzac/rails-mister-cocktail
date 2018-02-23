@@ -1,13 +1,15 @@
-<h1>New Cocktail</h1>
+<div class="container">
+  <h1>New Cocktail</h1>
 
-<% if @cocktail.errors.any? %>
-  <ul>
-    <% @cocktail.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
+  <% if @cocktail.errors.any? %>
+    <ul>
+      <% @cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
 
-<%= render 'form', cocktail: @cocktail %>
+  <%= render 'form', cocktail: @cocktail %>
 
-<%= link_to 'Back', cocktails_path %>
+  <%= link_to 'Back', cocktails_path %>
+</div>
